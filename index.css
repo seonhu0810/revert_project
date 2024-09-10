@@ -1,0 +1,216 @@
+/* 기본적인 스타일 */
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+  }
+  
+  /* 컨테이너 */
+  #container {
+    width: 100%;
+    margin: 0 auto;
+  }
+  
+  /* 헤더 스타일 */
+  header {
+    background-color: #007bff;
+    color: white;
+    padding: 1rem 0;
+  }
+  
+  #logo h1 {
+    margin: 0;
+    text-align: center;
+  }
+  
+  nav {
+    text-align: center;
+  }
+  
+  #topMenu {
+    list-style: none;
+    padding: 0;
+  }
+  
+  #topMenu li {
+    display: inline-block;
+    position: relative;
+    margin: 0 15px;
+  }
+  
+  #topMenu li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+  }
+  
+  #topMenu li ul {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: white;
+    padding: 10px;
+    list-style: none;
+  }
+  
+  #topMenu li ul li {
+    display: block;
+  }
+  
+  #topMenu li ul li a {
+    color: #007bff;
+    text-decoration: none;
+  }
+  
+  #topMenu li:hover ul {
+    display: block;
+  }
+  
+  /* 슬라이드쇼 스타일 */
+  #slideShow {
+    position: relative;
+    max-width: 100%;
+    margin: 20px auto;
+    overflow: hidden;
+  }
+  
+  #slides img {
+    width: 100%;
+    height: auto;
+    display: none;
+  }
+  
+  #slides img:first-child {
+    display: block;
+  }
+  
+  #prev, #next {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    font-size: 2rem;
+  }
+  
+  #prev {
+    left: 10px;
+  }
+  
+  #next {
+    right: 10px;
+  }
+  
+  /* 콘텐츠 스타일 */
+  #contents {
+    display: flex;
+    justify-content: space-between;
+    margin: 20px;
+  }
+  
+  #tabMenu {
+    width: 70%;
+  }
+  
+  #tabMenu input[type="radio"] {
+    display: none;
+  }
+  
+  #tabMenu label {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: white;
+    cursor: pointer;
+  }
+  
+  #tabMenu input[type="radio"]:checked + label {
+    background-color: #0056b3;
+  }
+  
+  .tabContent {
+    display: none;
+    padding: 20px;
+    background-color: white;
+    margin-top: 10px;
+  }
+  
+  #tabMenu input[type="radio"]:checked + label + .tabContent {
+    display: block;
+  }
+  
+  #notice ul, #gallery ul {
+    list-style: none;
+    padding: 0;
+  }
+  
+  #gallery ul li {
+    display: inline-block;
+    margin: 10px;
+  }
+  
+  /* 퀵 링크 스타일 */
+  #links ul {
+    list-style: none;
+    padding: 0;
+  }
+  
+  #links ul li {
+    display: inline-block;
+    text-align: center;
+    margin: 10px;
+  }
+  
+  #quick-icon1, #quick-icon2, #quick-icon3 {
+    display: block;
+    width: 50px;
+    height: 50px;
+    margin: 0 auto 10px;
+    background-color: #007bff;
+  }
+  
+  /* 푸터 스타일 */
+  footer {
+    background-color: #343a40;
+    color: white;
+    padding: 20px 0;
+    text-align: center;
+  }
+  
+  #bottomMenu ul {
+    list-style: none;
+    padding: 0;
+  }
+  
+  #bottomMenu ul li {
+    display: inline-block;
+    margin: 0 10px;
+  }
+  
+  #bottomMenu ul li a {
+    color: white;
+    text-decoration: none;
+  }
+  
+  #sns ul {
+    list-style: none;
+    padding: 0;
+  }
+  
+  #sns ul li {
+    display: inline-block;
+    margin: 0 10px;
+  }
+  
+  #sns ul li a img {
+    width: 30px;
+  }
+  
+  #company {
+    margin-top: 20px;
+  }
